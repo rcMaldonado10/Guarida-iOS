@@ -1,0 +1,106 @@
+#mainLabel {
+    animation-name: moveUp;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+#mainLabel2 {
+    animation-name: moveUp2;
+    animation-duration: 800ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.2;
+    }
+    25% {
+        transform: translate(0, -4);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translate(0, -8);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translate(0, -12);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(0, -12);
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp2 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0.2;
+    }
+    25% {
+        transform: translate(0, -4);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translate(0, -8);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translate(0, -8);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(0, -8);
+        opacity: 1;
+    }
+}
+
+.bienvenidoLogin {
+    color: black;
+    padding-top: 8;
+    padding-bottom: 16;
+    text-align: center;
+    font-size: 24sp;
+}
+
+CardView {
+    width: 90%;
+    background-color: rgb(206, 206, 206);
+    border-radius: 10px;
+}
+
+TextField {
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top: 30px;
+    background: white;
+    font-size: 20sp;
+    padding: 10px;
+}
+.form {
+    width: 80%;
+}
+
+.loginBtn {
+    margin: 30px;
+    color: black;
+    border-radius: 5px;
+    background-color: #fbc02d;
+    width: 100%;
+    font-size: 20sp;
+}
+
+.dropDown {
+    border-width: 2px;
+    margin-top: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    font-size: 20sp;
+}

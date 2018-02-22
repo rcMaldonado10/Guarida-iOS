@@ -1,0 +1,28 @@
+<ActionBar title="Principal"></ActionBar>
+<TabView>
+    <StackLayout *tabItem="{ title: 'Principal' }">
+        <Label class="bienvenido" text="Método de Reserva"></Label>
+        <CardView radius="5">
+            <StackLayout>
+                <Label class="homePageLabels" text="Por Salón" row="0" colSpan="2"></Label>
+                <Label class="details-label" text="* Seleccione esta opción si busca un salón específico." textWrap="true" row="1" colSpan="2"></Label>
+                <StackLayout class="hr-dark" row="2" colSpan="2"></StackLayout>
+                <Button class="homePageButton" text="Seleccionar" row="3" colSpan="2" (tap)="byClassroomNav()"></Button>
+            </StackLayout>
+        </CardView>
+        <CardView radius="5">
+            <StackLayout>
+                <Label class="homePageLabels" text="Por Hora"></Label>
+                <Label class="details-label" text="* Seleccione esta opción si busca una hora específica" textWrap="true"></Label>
+                <StackLayout class="hr-dark"></StackLayout>
+                <Button class="homePageButton" text="Seleccionar" (tap)="byHourNav()"></Button>
+            </StackLayout>
+        </CardView>
+    </StackLayout>
+    <StackLayout *tabItem="{ title: 'Reservas'}">
+        <Label text="Mis Reservas"></Label>
+    </StackLayout>
+    <StackLayout *tabItem="{ title: 'Settings' }">
+        <Label text="Settings"></Label>
+    </StackLayout>
+</TabView>

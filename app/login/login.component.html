@@ -1,0 +1,23 @@
+<ActionBar title="Inicio de Sesión"></ActionBar>
+<StackLayout>
+    <GridLayout rows="auto, auto, auto" columns="*,*,*">
+        <Label class="bienvenidoLogin" id="mainLabel" text="Bienvenido a Guarida Lobo" row="0" rowSpan="2" colSpan="3"></Label>
+        <Label class="bienvenidoLogin" id="mainLabel2" text="Regístrese para reservar" row="1" rowSpan="2" colSpan="3"></Label>
+    </GridLayout>
+
+    <CardView radius="5">
+        <StackLayout class="form">
+            <TextField hint="Nombre"></TextField>
+
+            <TextField hint="Número de Estudiante" keyboardType="phone"></TextField>
+
+            <StackLayout class="dropDown">
+                <DropDown #dd backroundColor="red" [items]="departments" [(ngModel)]="selectedIndex" (selectedIndexChanged)="onchange($event)"
+                    (opened)="onopen()" (closed)="onclose()" hint="Departamento Academico">
+                </DropDown>
+            </StackLayout>
+
+            <Button class="loginBtn" text="Registrar" (tap)="toMain()"></Button>
+        </StackLayout>
+    </CardView>
+</StackLayout>
